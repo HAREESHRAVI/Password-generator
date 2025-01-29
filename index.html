@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassGen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="heading">Password Generator</h1>
+      <input
+        id="inp"
+        placeholder="Enter length of password"
+        type="number"
+        min="1"
+      /><br />
+      <div id="columns">
+        <div id="column1">
+          <input id="lowercase" type="checkbox" />
+          <label>Include Lowercase characters</label><br />
+        </div>
+        <div id="column2">
+          <input id="uppercase" type="checkbox" />
+          <label>Include Uppercase characters</label><br />
+        </div>
+        <div id="column3">
+          <input id="special" type="checkbox" />
+          <label>Include Special characters</label><br />
+        </div>
+        <div id="column4">
+          <input id="numbers" type="checkbox" />
+          <label>Include Numbers</label>
+        </div>
+      </div>
+      <button id="submit-btn" onclick="generatePass()">Generate</button>
+      <div id="result">Generated password will appear here</div>
+      <button id="copy-btn" onclick="copyPassword()">Copy</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
